@@ -44,5 +44,21 @@ RRRR
 OOOOOOOOOOO
 OOOO
 
+Scenario: Midnight without one second
+When the time is 23:59:59
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYRYY
+YYYY
 
+Scenario: Midnight and one second
+When the time is 00:00:01
+Then the clock should look like
+O
+OOOO
+OOOO
+OOOOOOOOOOO
+OOOO
 
